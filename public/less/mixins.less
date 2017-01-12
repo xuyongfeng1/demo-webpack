@@ -1,0 +1,16 @@
+// Misc: mixins
+//==============
+.img-background(@imgurl){
+    background-image:@imgurl;
+    background-position: 0 0;
+    background-size:cover;
+}
+
+.center-img-background(@imgurl,@w){
+    position: absolute;
+    margin-left:-(@w / 2);
+    left:50%;
+    background-image:@imgurl;
+    background-position: 0 0;
+    background-size:cover;
+}

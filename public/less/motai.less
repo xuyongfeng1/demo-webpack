@@ -1,0 +1,118 @@
+.motai_explain{
+	// border:2px solid red;
+	overflow:auto;
+	.mk_explain_nav{
+		position: fixed;
+		width: 80%;
+		height: 100px;
+		background: red;
+		top:5%;
+		text-align: center;
+		// background: white;
+		font-size: 30px;
+		line-height: 100px;
+		text-align: center;
+		background: white url("../images/delete.png") no-repeat right top;
+		background-size: 80px;
+		color:#df9815;
+		border-bottom: 2px dashed #ccc;
+		u{
+			font-size: 30px;
+
+		}
+		.del{
+			position: absolute;
+			height: 42px;
+			line-height: 42px;	
+			right: 10px;
+			font-size: 35px;
+			color:white;
+			width: 25px;
+			height: 25px;
+			// background: red;
+		}
+	}
+	.mk_explain_c{
+		margin-top: 120px;
+		padding-left: 25px;
+		padding-right: 25px;
+		.title{
+			text-indent: 2rem;
+		}
+	}
+	.mk_footer{
+		// border-top: 2px dashed #ccc;
+		position:fixed;
+		padding-top: 20px;
+		width: 80%;
+		height: 200px;		
+		bottom:5%;
+		background: white;
+
+		.mk_footer_text{
+			// padding: 15px 30px;
+	 		color: #a0a0a0;
+			text-align: left;
+			line-height: 31px;
+			font-size: 28px;
+	 		box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3);
+		}
+
+		.mk_footer_sub{
+		text-align: center;
+		width: 150px;
+		margin: 0 auto;
+	    padding: 10px;
+	    color: #fff;
+	    font-size: 20px;
+	    line-height: 31px;
+	    height: 31px;
+	    border-radius: 5px;
+	    border: 1px solid #efc83f;
+	    background-color: #efc83f;
+		}
+
+		label {
+			display: inline-block;
+			cursor: pointer;
+			position: relative;
+			padding-left: 7px;
+			margin-right: 5px;
+			font-size: 22px;
+			padding-top: 4px;
+			// text-indent: 1.5em;
+		}
+		input[type=radio],input[type=checkbox] {
+					display: none;
+				}
+		label:before {
+			content: "";
+			display: inline-block;
+			width: 26px;
+			height: 25px;
+			margin-right: 10px;
+			position: absolute;
+			left: 5px;
+			top: 5px;
+			background-color: #fff;
+			box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+		}
+		input[type=radio]:checked + label:before {
+			content: "\2022";
+			color: #74b51c;
+			font-size: 31px;
+			text-align: center;
+			line-height: 24px;	
+		}
+
+		input[type=checkbox]:checked + label:before {
+			content: "\2713";
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+			font-size: 28px;
+			color: #74b51c;
+			text-align: center;
+			line-height: 28px;
+		}
+	}
+	
+}

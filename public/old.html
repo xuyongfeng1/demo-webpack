@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>惠氏妈妈俱乐部</title>
+		<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+		<meta name="format-detection" content="telephone=no"/>  
+
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+	</head>
+	<body>
+		<div class="mobile_z" style="">
+			
+			<div class="nav">
+				<div class="logo"></div>
+				<div class="nTitle"></div>
+			</div>
+			<form class="z_form" action="json" callback="formCallback">
+				<div class="z_content">
+					<div class="z_form">
+						<div class="item">
+							<div class="item_input pl60">
+								<i class="m_ico user_ico"></i>
+								<input type="text" class="" placeholder="您的姓名">
+							</div>
+							
+						</div>
+
+						<div class="item">
+							<div class="item_input pl60">
+								<i class="m_ico phone_ico"></i>
+								<input type="number" pattern="[0-9]*" class="" placeholder="手机号码">
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="item_input pl60">
+								<i class="m_ico phone_ico"></i>
+								<input type="number" pattern="[0-9]*" class="" placeholder="宝宝生日">
+							</div>
+						</div>
+
+						<div class="item">							
+							<div class="item_text_left pl60">
+								<div class="item_label_old  item_label_mid">收货人姓名</div>
+								<div class="item_input">
+									<input name="name" type="text" class="" placeholder="">
+								</div>
+							</div>
+						</div>
+						
+						<div class="item">							
+							<div class="item_text_left pl60">
+								<div class="item_label_old item_label_mid">收货人手机</div>
+								<div class="item_input">
+									<input name="mobile" type="text" class="" placeholder="">
+								</div>
+							</div>
+						</div>
+
+
+						<div class="item">
+							<div class="item_yzm">
+								<div class="item_input">
+									<input name="code" type="number" pattern="[0-9]*" class="" placeholder="请输入验证码">
+								</div>
+								<div class="bnt" i-click="getCode">获取验证码</div>
+							</div>
+						</div>
+
+
+
+						<div class="item">
+							<div class="item_text_left pl60">
+								<div class="item_label item_label_mid">所在区域</div>
+								<div class="item_input dy"> 
+									<select name="province" id="province" i-change="changetest"></select>
+									<div class="arrowup"><div class="arrowupt"></div></div>
+								</div>
+								<div class="item_input dm">
+									<select name="city" id="city" i-change="changetest"></select>
+									<div class="arrowup"><div class="arrowupt"></div></div>
+								</div>
+								<div class="item_input dd">
+									<select name="district" id="district" ></select>
+									<div class="arrowup"><div class="arrowupt"></div></div>
+								</div>
+							</div>							
+						</div>
+
+						<div class="item">
+
+							<div class="item_text_left pl60">
+								<div class="item_label_old item_label_mid">收获地址</div>
+								<div class="item_input">
+									<input name="address" type="text" class="" placeholder="">
+								</div>
+							</div>
+							
+						</div>
+
+
+					</div>
+				</div>
+			</form>
+			<div class="footer">
+				<div class="bnt big" i-click="postAddForm">申领提交</div>
+			</div>
+
+		</div>	
+
+		<script type="text/javascript">var page = "old"</script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+		<script type="text/javascript" src="js/vendors.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		
+	</body>
+	</html>
